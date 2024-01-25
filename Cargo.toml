@@ -1,0 +1,16 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2021"
+publish = false
+
+[dependencies]
+env_logger = "0.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dependencies.bottlerocket-settings-sdk]
+git = "https://github.com/bottlerocket-os/bottlerocket-settings-sdk"
+tag = "bottlerocket-settings-sdk-v0.1.0-alpha.2"
+version = "0.1.0-alpha"

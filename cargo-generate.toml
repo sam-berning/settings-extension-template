@@ -1,0 +1,9 @@
+[placeholders.setting-name]
+type = "string"
+prompt = "What do you want to call your setting? (kebab-case)"
+
+[hooks]
+pre = ["setting-name.rhai"]
+
+[template]
+ignore = ["README.md"]
